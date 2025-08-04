@@ -197,6 +197,12 @@ const Footer = () => {
             </a>
           </li>
           <li>
+            <a href="https://instagram.com/znhoque" target="_blank" title="Instagram" className="social-icon text-white hover:text-blue-400 transition duration-300">
+              <i className="fab fa-instagram text-2xl"></i>
+              <span className="sr-only">Instagram</span>
+            </a>
+          </li>
+          <li>
             <a href="https://twitter.com/zahinhoque" target="_blank" title="Twitter" className="social-icon text-white hover:text-blue-400 transition duration-300">
               <i className="fab fa-twitter text-2xl"></i>
               <span className="sr-only">Twitter</span>
