@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zahin Noor Hoque</title>
+    <!-- Google Fonts - Inter for a professional look -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome for social media icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" xintegrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0V4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Load Tailwind CSS from CDN here. This MUST be in the <head> -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+        /* This ensures the body has a light background even if Tailwind fails to load */
+        body {
+            background-color: #f8fafc; /* Tailwind's gray-50 or gray-100 equivalent */
+            font-family: 'Inter', sans-serif; /* Apply Inter font globally */
+            color: #334155; /* Default text color */
+        }
+        /* Optional: Smooth scrolling */
+        html {
+            scroll-behavior: smooth;
+        }
+        /* Custom styles for social icons (can also be done directly in JSX) */
+        .social-icon {
+            font-size: 1.5rem; /* Adjust size as needed */
+            color: #64748b; /* Default icon color */
+            transition: color 0.3s ease;
+        }
+        /* Hover effect for social icons in the footer (overridden by footer's specific styles) */
+        .footer-links .social-icon:hover {
+            color: #60a5fa; /* A lighter blue on hover for footer icons */
+        }
+    </style>
+</head>
+<body>
+    <div id="root"></div> <!-- This is where your React app will be mounted by Vite -->
+    <script type="module" src="/src/main.jsx"></script> <!-- Vite's entry point for your React app -->
+</body>
+</html>
