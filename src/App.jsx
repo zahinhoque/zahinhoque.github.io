@@ -19,7 +19,6 @@ const Header = () => {
     <header className="bg-gray-50 shadow-sm py-4 fixed w-full z-10 font-sans border-b border-gray-200">
       <nav className="container mx-auto px-4 flex justify-between items-center">
         <div className="flex items-center space-x-4">
-          {/* Removed the avatar-container div that contained the image */}
           <a href="#introduction" className="text-xl font-bold text-gray-800 hover:text-blue-700 transition duration-300">Zahin Noor Hoque</a>
         </div>
         <div className="space-x-6 hidden md:flex">
@@ -41,8 +40,7 @@ const Introduction = () => {
     <section id="introduction" className="relative w-full bg-white py-16 md:py-24 pt-24 pb-0 flex flex-col items-center justify-center text-center"> {/* Changed pb-8 to pb-0 */}
       <div className="container mx-auto px-4 max-w-4xl">
         <div className="mb-8">
-          {/* Updated image source to a relative path assuming the image is in public/images/ */}
-          <img src="/images/zahin_hoque_profile.jpg" alt="Zahin Hoque Professional Photo" className="w-44 h-44 rounded-full mx-auto object-cover border-4 border-blue-700 shadow-lg" />
+          <img src="/images/zahin_hoque_profile.png" alt="Zahin Hoque Professional Photo" className="w-44 h-44 rounded-full mx-auto object-cover border-4 border-blue-700 shadow-lg" />
         </div>
 
         <h1 className="text-4xl md:text-5xl font-extrabold leading-tight mb-2 text-gray-900 mt-8">Zahin Noor Hoque</h1>
