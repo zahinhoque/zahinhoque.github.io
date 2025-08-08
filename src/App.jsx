@@ -76,7 +76,7 @@ const Header = ({ onNavigate, currentPage }) => {
           <a href="#introduction" onClick={() => handleInternalScroll('home', 'introduction')} className="text-xl font-bold text-gray-800 hover:text-blue-700 transition duration-300">Zahin Noor Hoque</a>
         </div>
         <div className="space-x-6 hidden md:flex">
-          <a href="#introduction" onClick={() => handleInternalScroll('home', 'introduction')} className="text-gray-600 hover:text-blue-700 font-medium transition duration-300">About</a>
+          <a href="#introduction" onClick={() => handleMobileNavClick('home', 'introduction')} className="text-gray-600 hover:text-blue-700 font-medium transition duration-300">About</a>
           <a href="#all-updates" onClick={() => onNavigate('allUpdates')} className="text-gray-600 hover:text-blue-700 font-medium transition duration-300">News</a>
           <a href="#interests" onClick={() => onNavigate('interests')} className="text-gray-600 hover:text-blue-700 font-medium transition duration-300">Interests</a>
           <a href="#footer" onClick={handleConnectClick} className="text-gray-600 hover:text-blue-700 font-medium transition duration-300">Connect</a>
