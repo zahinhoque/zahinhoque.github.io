@@ -366,7 +366,7 @@ const Interests = () => {
         },
         {
           type: 'image',
-          src: '/images/arabicbengali.jpg',
+          src: '/images/arabicbengali.JPG',
           alt: 'An example of Arabic-script Bengali from a historical manuscript.',
           caption: 'A historical Bengali text written in the Arabic script (Credit: Bangla Academy)'
         }
