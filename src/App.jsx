@@ -13,7 +13,13 @@ const HomePage = ({ onNavigate }) => {
 };
 
 function App() {
-  const [currentPage, setCurrentPage] = React.useState('home');
+  const [currentPage, setCurrentPage] = React.useState(() => {
+    const savedPage = localStorage.getItem('currentPage');
+    return savedPage ? savedPage : 'home';
+  });
+  React.useEffect(() => {
+    localStorage.setItem('currentPage', currentPage);
+  }, [currentPage]);
   const handleNavigation = (pageId) => {
     setCurrentPage(pageId);
     window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -29,7 +35,7 @@ function App() {
   );
 }
 
-const Header = ({ onNavigate }) => {
+const Header = ({ onNavigate, currentPage }) => {
   const handleInternalScroll = (pageId, sectionId) => {
     onNavigate(pageId);
     setTimeout(() => {
@@ -39,6 +45,14 @@ const Header = ({ onNavigate }) => {
       }
     }, 100);
   };
+
+  const handleConnectClick = () => {
+    const footer = document.getElementById('footer');
+    if (footer) {
+      footer.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <header className="bg-gray-50 shadow-sm py-4 fixed w-full z-10 font-sans border-b border-gray-200">
       <nav className="container mx-auto px-4 flex justify-between items-center">
@@ -158,7 +172,6 @@ const newsItems = [
 ];
 
 const RecentNews = ({ onNavigate }) => {
-  // Display only the X most recent updates (e.g., 3)
   const displayedNewsItems = newsItems.slice(0, 3);
 
   return (
@@ -377,7 +390,7 @@ const Interests = () => {
 
   const [selectedInterest, setSelectedInterest] = React.useState(interestsData[0]);
   return (
-    <section id="interests" className="py-8 md:py-12 w-full bg-white">
+    <section id="interests" className="py-16 md:py-24 pt-24 w-full bg-white">
       <div className="container mx-auto px-4 max-w-4xl">
         <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-8 text-center">💡 My Interests & Insights 💡</h2>
         <p className="text-center text-gray-600 mb-8">
@@ -408,7 +421,6 @@ const Interests = () => {
             {selectedInterest ? (
               <>
                 <h3 className="text-2xl font-bold text-blue-700 mb-4">{selectedInterest.title}</h3>
-                {/* Dynamically renders HTML content from the data. */}
                 <div
                   className="prose lg:prose-lg text-gray-700 leading-relaxed text-base"
                   dangerouslySetInnerHTML={{ __html: selectedInterest.content }}
