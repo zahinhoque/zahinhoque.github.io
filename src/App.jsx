@@ -83,6 +83,9 @@ const Introduction = () => {
         </div>
 
         <h1 className="text-4xl md:text-5xl font-extrabold leading-tight mb-2 text-gray-900 mt-8">Zahin Noor Hoque</h1>
+        <p className="text-lg text-gray-600 font-light mb-2 leading-none">
+          জাহীন নূর হক • ذهین نور حق
+        </p>
         <p className="text-xl md:text-2xl font-light mb-8 max-w-2xl mx-auto">
           <span className="font-semibold text-blue-700">Linguistics</span> and <span className="font-semibold text-blue-700">Computer Science</span>
           <span> Undergraduate Student at the University of Georgia Morehead Honors College</span>
@@ -250,7 +253,7 @@ const Interests = () => {
       title: 'Investigating Ergativity in Eastern Indo-Aryan',
       summary: 'My current research investigates ergativity-like phenomena in Eastern Bengali dialects and other Eastern Indo-Aryan languages, a topic that challenges traditional linguistic classifications.',
       content: `
-        <p class="mb-4">My current research focuses on ergativity-like phenomena within the Eastern Indo-Aryan language subbranch, particularly in Vanga (Eastern Bengali) dialects. While Eastern Indo-Aryan languages are traditionally considered non-ergative, my work and existing scholarship on Assamese suggest that the topic may be more complex than is historically documented. I am actively investigating how the distribution of certain morphological markers in these languages may warrant a re-evaluation of this sweeping assumption.</p>
+        <p class="mb-4">My current research focuses on ergativity-like phenomena within the Eastern Indo-Aryan languages, particularly in Vanga (Eastern Bengali) dialects. While Eastern Indo-Aryan languages are traditionally considered non-ergative, my work and existing scholarship on Assamese suggest that the topic may be more complex than is historically documented. I am actively investigating how the distribution of certain morphological markers in these languages may warrant a re-evaluation of this sweeping assumption.</p>
         <p class="mb-4">My current methodology heavily involves fieldwork, replicating the methodology of Li (2007), but I am open to extending it to corpus-based analysis in the future as well. By collecting data from speakers of various Eastern Bengali dialects (and potentially related languages like Chakma and Bishnupriya Manipuri), I aim to closely examine case marking and other features that might exhibit properties similar to ergativity, where the subject of a transitive verb is marked differently from the subject of an intransitive verb.</p>
         <p class="mb-0">My findings could challenge existing typological classifications and shed light on the historical development of these languages, particularly Bengali and Assamese. More coming soon on this topic!</p>
       `,
