@@ -216,7 +216,7 @@ const AllUpdatesPage = ({ onNavigate }) => {
   return (
     <section id="all-updates" className="py-16 md:py-24 pt-24 w-full bg-white">
       <div className="container mx-auto px-4 max-w-4xl">
-        <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-8 text-center">📰 All Updates & News 📰</h2>
+        <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-8 text-center">All Updates</h2>
         <p className="text-center text-gray-600 mb-8">
           A complete chronological list of my recent activities and achievements.
         </p>
@@ -251,7 +251,7 @@ const Interests = () => {
       summary: 'My current research investigates ergativity-like phenomena in Eastern Bengali dialects and other Eastern Indo-Aryan languages, a topic that challenges traditional linguistic classifications.',
       content: `
         <p class="mb-4">My current research focuses on ergativity-like phenomena within the Eastern Indo-Aryan language subbranch, particularly in Vanga (Eastern Bengali) dialects. While Eastern Indo-Aryan languages are traditionally considered non-ergative, my work and existing scholarship on Assamese suggest that the topic may be more complex than is historically documented. I am actively investigating how the distribution of certain morphological markers in these languages may warrant a re-evaluation of this sweeping assumption.</p>
-        <p class="mb-4">My current methodology heavily involves fieldwork, but I am open to extending it to corpus-based analysis in the future as well. By collecting data from speakers of various Eastern Bengali dialects (and potentially related languages like Chakma and Bishnupriya Manipuri), I aim to closely examine case marking, verb agreement, and other grammatical features that might exhibit properties similar to ergativity, where the subject of a transitive verb is marked differently from the subject of an intransitive verb.</p>
+        <p class="mb-4">My current methodology heavily involves fieldwork, replicating the methodology of Li (2007), but I am open to extending it to corpus-based analysis in the future as well. By collecting data from speakers of various Eastern Bengali dialects (and potentially related languages like Chakma and Bishnupriya Manipuri), I aim to closely examine case marking and other features that might exhibit properties similar to ergativity, where the subject of a transitive verb is marked differently from the subject of an intransitive verb.</p>
         <p class="mb-0">My findings could challenge existing typological classifications and shed light on the historical development of these languages, particularly Bengali and Assamese. More coming soon on this topic!</p>
       `,
       media: [
@@ -259,7 +259,7 @@ const Interests = () => {
           type: 'image',
           src: 'https://upload.wikimedia.org/wikipedia/commons/d/da/Bengali-Assamese_subbranches.png',
           alt: 'A diagram showing the subbranches of the Bengali-Assamese language family (Credit: Wikimedia Commons)',
-          caption: 'A visual representation of the subbranches within the Bengali-Assamese language family.'
+          caption: 'A visual representation of the subbranches within the Bengali-Assamese branch.'
         }
       ]
     },
@@ -336,7 +336,7 @@ const Interests = () => {
         },
         {
           type: 'image',
-          src: 'https://via.placeholder.com/600x400/C0C0C0/000000?text=Historical+Arabic-script+Bengali+Text',
+          src: '/images/arabicbengali.jpg',
           alt: 'An example of Arabic-script Bengali from a historical manuscript.',
           caption: 'A historical Bengali text written in the Arabic script (Credit: Bangla Academy)'
         }
@@ -384,7 +384,7 @@ const Interests = () => {
   return (
     <section id="interests" className="py-16 md:py-24 pt-24 w-full bg-white">
       <div className="container mx-auto px-4 max-w-4xl">
-        <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-8 text-center">💡 My Interests & Insights 💡</h2>
+        <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-8 text-center">Interests</h2>
         <p className="text-center text-gray-600 mb-8">
           Dive deeper into my academic and research interests.
         </p>
