@@ -90,7 +90,7 @@ const Header = ({ onNavigate, currentPage }) => {
         </div>
       </nav>
       <div className={`md:hidden transition-all duration-300 ease-in-out ${isMenuOpen ? 'max-h-screen opacity-100' : 'max-h-0 opacity-0 overflow-hidden'}`}>
-        <div className="bg-gray-50 flex flex-col items-center py-4 space-y-4">
+        <div className="bg-gray-50 flex flex-col items-center py-2 space-y-4">
           <a href="#introduction" onClick={() => handleMobileNavClick('home', 'introduction')} className="block w-full text-center text-gray-600 hover:text-blue-700 font-medium transition duration-300 py-2">About</a>
           <a href="#all-updates" onClick={() => handleMobileNavClick('allUpdates')} className="block w-full text-center text-gray-600 hover:text-blue-700 font-medium transition duration-300 py-2">News</a>
           <a href="#interests" onClick={() => handleMobileNavClick('interests')} className="block w-full text-center text-gray-600 hover:text-blue-700 font-medium transition duration-300 py-2">Interests</a>
