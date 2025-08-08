@@ -73,8 +73,7 @@ const Header = ({ onNavigate, currentPage }) => {
     <header className="bg-gray-50 shadow-sm py-4 fixed w-full z-10 font-sans border-b border-gray-200">
       <nav className="container mx-auto px-4 flex justify-between items-center">
         <div className="flex items-center space-x-4">
-          <a href="#introduction" onClick={() => handleInternalScroll('home', 'introduction')} className="text-xl font-bold text-gray-800 hover:text-blue-700 transition duration-300">Zahin Noor Hoque</a>
-        </div>
+          <a href="#introduction" onClick={() => handleMobileNavClick('home', 'introduction')} className="text-xl font-bold text-gray-800 hover:text-blue-700 transition duration-300">Zahin Noor Hoque</a>        </div>
         <div className="space-x-6 hidden md:flex">
           <a href="#introduction" onClick={() => handleMobileNavClick('home', 'introduction')} className="text-gray-600 hover:text-blue-700 font-medium transition duration-300">About</a>
           <a href="#all-updates" onClick={() => onNavigate('allUpdates')} className="text-gray-600 hover:text-blue-700 font-medium transition duration-300">News</a>
