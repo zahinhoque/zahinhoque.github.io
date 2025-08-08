@@ -241,81 +241,141 @@ const AllUpdatesPage = ({ onNavigate }) => {
 const Interests = () => {
   const interestsData = [
     {
-      id: 'linguistics',
-      title: 'Linguistics Research',
-      summary: 'My primary linguistic interests revolve around South Asian languages, particularly Eastern Bengali, with a focus on phonetics, phonology, and morphosyntax. I also have a strong background in neurolinguistics and language documentation.',
+      id: 'ergativity',
+      title: 'Investigating Ergativity in Eastern Indo-Aryan',
+      summary: 'My current research investigates ergativity-like phenomena in Eastern Bengali dialects and other Eastern Indo-Aryan languages, a topic that challenges traditional linguistic classifications.',
       content: `
-        <p class="mb-4">My current research investigates ergativity-like phenomena in Eastern Bengali dialects under Dr. Pilar Chamorro Fernández. This involves qualitative analysis of syntactic environments to challenge traditional nominative-accusative classifications and explore the interplay of unergative vs. unaccusative verbs and animacy hierarchies.</p>
-        <p class="mb-4">Previously, I conducted neurolinguistics research on Urdu as a member of the FALCoN lab at UGA under Professor Dustin A. Chacón. This project specifically examined EEG responses to varied forms of the Arabic script, contributing to our understanding of visual word form processing.</p>
-        <p class="mb-0">Beyond these projects, I am deeply interested in historical linguistics, language contact, and the sociolinguistic aspects of language variation and change. My coursework has provided a robust foundation in generative syntax, phonetics/phonology, and quantitative methods, complementing my field methods experience.</p>
+        <p class="mb-4">My current research focuses on ergativity-like phenomena within the Eastern Indo-Aryan language subbranch, particularly in **Vanga** (Eastern Bengali) dialects. While Eastern Indo-Aryan languages are traditionally considered non-ergative, my work and existing scholarship on Assamese suggest that the topic may be more complex than is historically documented. I am actively investigating how the distribution of certain morphological markers in these languages may warrant a re-evaluation of this sweeping assumption.</p>
+        <p class="mb-4">My current methodology heavily involves fieldwork, but I am open to extending it to corpus-based analysis in the future as well. By collecting data from speakers of various Eastern Bengali dialects (and potentially related languages like **Chakma** and **Bishnupriya Manipuri**), I aim to closely examine case marking, verb agreement, and other grammatical features that might exhibit properties similar to ergativity, where the subject of a transitive verb is marked differently from the subject of an intransitive verb.</p>
+        <p class="mb-0">My findings could challenge existing typological classifications and shed light on the historical development of these languages, particularly Bengali and Assamese. More coming soon on this topic!</p>
       `,
       media: [
         {
           type: 'image',
-          src: '/images/linguistics_research.jpg',
-          alt: 'Linguistics research diagram',
-          caption: 'An illustrative diagram representing linguistic analysis.'
-        },
-        {
-          type: 'image',
-          src: '/images/urdu_eeg.jpg',
-          alt: 'EEG brain activity for Urdu study',
-          caption: 'Sample EEG data showing brain responses during Urdu language processing.'
+          src: 'https://upload.wikimedia.org/wikipedia/commons/d/da/Bengali-Assamese_subbranches.png',
+          alt: 'A diagram showing the subbranches of the Bengali-Assamese language family.',
+          caption: 'A visual representation of the subbranches within the Bengali-Assamese language family.'
         }
       ]
     },
     {
-      id: 'computer-science',
-      title: 'Computer Science & AI',
-      summary: 'My computer science pursuits are heavily focused on Artificial Intelligence, data science, and full-stack web development, with a strong foundation in core CS principles.',
+      id: 'neurolinguistics',
+      title: 'Neurolinguistic Processing of Urdu Scripts',
+      summary: 'A look into my previous neurolinguistics research on how the human brain processes different calligraphic styles of the Urdu script.',
       content: `
-        <p class="mb-4">My academic journey in Computer Science emphasizes Artificial Intelligence, evidenced by graduate coursework in AI and human-computer interaction. I have a solid understanding of data structures, algorithms, theory of computation, and systems programming, built through rigorous coursework in Java software development.</p>
-        <p class="mb-4">I actively engage in practical application through hackathons and team projects. A notable project includes collaborating on a full-stack AI-powered tutoring chatbot using React, Vite, Tailwind CSS, NodeJS, Express, and MongoDB, integrating OpenAI's GPT for dynamic learning assistance.</p>
-        <p class="mb-0">My interests extend to data science, where I've completed a certificate, and web development, contributing to projects like a full-stack cinema ticket booking platform. This blend of theoretical knowledge and practical experience allows me to approach complex problems with a comprehensive skill set.</p>
+        <p class="mb-4">My previous neurolinguistics research with the FALCoN lab at the University of Georgia, under the guidance of PI Professor Dustin A. Chacón (now at the University of California, Santa Cruz), investigated how the brain processes different writing styles in Urdu. We examined the neural responses of Urdu readers to two distinct script variants: **Naskh** and **Nastaʿlīq**.</p>
+        <p class="mb-4">Naskh and Nastaʿlīq are calligraphic styles of the Arabic script. Nastaʿlīq is a highly cursive, diagonal style with overlapping characters that complicates text recognition, while Naskh is more structured and block-like. Urdu readers have historically preferred the Nastaʿlīq style, and its complex nature presents challenges for digital text recognition, a problem that has led to a preference for the simpler Naskh style in many digital contexts, not without backlash from the Urdu speech community.</p>
+        <p class="mb-4">Our study focused on the **M/N170**, a visual word-specific brain response that typically localizes to the left fusiform gyrus (also known as the "visual word-form area"), designing an experiment based on that of Tarkiainen et al. (1999). The N170 is an electrophysiological signal that appears approximately 170ms after a word is presented, and it indicates that the brain is distinguishing between words and non-linguistic visual stimuli. Our main hypothesis was that the brain of an Urdu reader would process these two script styles differently. We predicted that due to its holistic nature, Nastaʿlīq would elicit brain responses in the right fusiform gyrus, similar to what is seen in readers of logographic languages like Mandarin Chinese, while Naskh would be processed in the left fusiform gyrus, similar to readers of alphabetic languages like English.</p>
+        <p class="mb-0">Our findings, however, did not fully align with our initial hypothesis. While all languages in our study (Urdu, English, and Mandarin Chinese) distinguished between words and symbols, the Urdu scripts showed a different pattern. Specifically, both Naskh and Nastaʿlīq showed word-specific effects in the left fusiform gyrus, similar to English. However, Naskh showed a greater neural signal in the right anterior temporal lobe, while Nastaʿlīq elicited a greater response in Wernicke's Area and the left posterior temporal lobe. These results suggest that the neural basis of word recognition is not a simple left- or right-hemisphere dichotomy based on script type, but rather a more complex interaction between the psychophysical properties of the writing system and the language network.</p>
       `,
       media: [
         {
           type: 'image',
-          src: '/images/ai_chatbot.jpg',
-          alt: 'AI Chatbot interface',
-          caption: 'Conceptual design of an AI-powered tutoring chatbot.'
-        },
-        {
-          type: 'image',
-          src: '/images/full_stack_dev.jpg',
-          alt: 'Full-stack development illustration',
-          caption: 'An illustration representing different layers of full-stack development.'
+          src: 'https://upload.wikimedia.org/wikipedia/commons/9/9f/Naskh-nasta%27liq-comparison.png',
+          alt: 'A comparison of Naskh and Nastaʿlīq scripts, showing the different styles.',
+          caption: 'Comparison of the Naskh and Nastaʿlīq scripts (Credit: Wikimedia Commons)'
         }
       ]
     },
     {
-      id: 'cultural-studies',
-      title: 'Cultural & Language Studies',
-      summary: 'Beyond my primary fields, I engage deeply with cultural and language studies, particularly through my minor in Arabic and leadership roles in student organizations.',
+      id: 'tonogenesis',
+      title: 'Tonogenesis and Aspiration in Eastern Bengali',
+      summary: 'My research interests include the phonological process of tonogenesis in Eastern Bengali varieties and its relationship with the historical loss of aspiration.',
       content: `
-        <p class="mb-4">My minor in Arabic has provided me with a deep appreciation for language acquisition and cultural understanding. This academic pursuit complements my linguistic research by offering insights into language structure and its societal implications.</p>
-        <p class="mb-4">As the President of the UGA Linguistics Club, I regularly organize and lead discussions and activities that engage members with diverse linguistic topics, fostering a vibrant academic community. My previous role as President of the Muslim Student Association further honed my leadership and organizational skills, allowing me to provide consistent weekly meetings and engage a large student body.</p>
-        <p class="mb-0">These experiences highlight my commitment to interdisciplinary learning and my ability to connect with diverse groups, enriching my academic and personal development.</p>
+        <p class="mb-4">I am deeply fascinated by claims of tonogenesis, or the development of lexical tone, in Eastern Bengali varieties. Recent work on Sylheti has documented the emergence of tone from the historical loss of aspiration. However, claims of this process occurring in a wider range of Eastern Bengali dialects, including those from the historical Dhaka district, date back to the mid-20th century. I aim to revisit these earlier claims using modern acoustic methods to show whether the phonological changes documented in Sylheti are part of a broader areal feature of Eastern Bengal.</p>
+        <p class="mb-4">A significant gap in the existing literature is its focus on speakers from India, overlooking the linguistic landscape of Bangladesh, which I seek to remedy. This approach will not only provide a more comprehensive dataset but also allow for a direct comparison against previous findings. I am mindful of (and perhaps even a little worried about) the potential for dialect leveling to have occurred over the past century, but even observing such changes would itself give us insights into the dynamics of Bengali varieties spoken in Bangladesh.</p>
+        <p class="mb-0">Expanding the scope of inquiry beyond a single dialect could challenge the notion that tonogenesis is an isolated feature of Sylheti and that similar phonological developments may have occurred across a wider dialect continuum. If findings turn out to reflect what has been documented historically, they would both be of typological significance and recontextualize the relationship between varieties of Bengali.</p>
       `,
       media: [
         {
           type: 'image',
-          src: '/images/arabic_script.jpg',
-          alt: 'Arabic script calligraphy',
-          caption: 'Example of beautiful Arabic calligraphy.'
+          src: 'https://upload.wikimedia.org/wikipedia/commons/e/e5/Praat_spectogram_standard_settings.jpg',
+          alt: 'A spectrogram of speech, visualizing sound frequencies over time.',
+          caption: 'Example of a spectrogram used in acoustic analysis (Credit: Wikimedia Commons)'
+        }
+      ]
+    },
+    {
+      id: 'bengali-scripts',
+      title: 'Exploring Historical Bengali Scripts & Oral Traditions',
+      summary: 'A look into my general interests in documenting historical alternative orthographies and oral traditions of Eastern Bengali, and their potential for computational linguistic analysis.',
+      content: `
+        <p class="mb-4">My linguistic interests extend to the rich, often-overlooked, literary traditions of Eastern Bengali. I am fascinated by historical alternative orthographies like **Sylhet Nagari** and **Arabic-script Bengali** (as well as oral traditions like those found in the **Mymensingh Gitika** and **Purbabanga Gitika** compilations). The more phonetic nature of the orthographies, in particular, can reveal historical sound changes that are not always captured in the Bengali script. Analyzing these traditions can provide a timeline for processes like deaspiration (which may have led to tonogenesis), spirantization, and other phonological and non-phonological shifts.</p>
+        <p class="mb-4">I would be interested in using computational methods to analyze these historical documents. For the written texts, my goal is to use **Optical Character Recognition (OCR)** to build a digital corpus of rare documents written in Sylhet Nagari and Arabic-script Bengali. This dataset would then be used for analysis, including **stylometry** to measure the textual similarities of these works to other Middle Bengali literature. Though I personally can already read these scripts, such research could make these forgotten regional texts accessible to an entire new generation and challenge the common misconception that Sylhet Nagari texts contain something alien and unintelligible.</p>
+        <p class="mb-0">Beyond linguistic analysis, I am also interested in the broader historical context these traditions provide. These alternative scripts and folk ballads are central to understanding the spread of Islam and contextualizing the development of a distinct Bengali Muslim identity. By studying these sources, I aim to shed light on a crucial and often misrepresented aspect of the literary history of Bengali.</p>
+      `,
+      media: [
+        {
+          type: 'image',
+          src: 'https://upload.wikimedia.org/wikipedia/commons/d/d0/Halot-un-nabi-page1.gif',
+          alt: 'An example of the Sylhet Nagari script.',
+          caption: 'Example of the Sylhet Nagari script (Credit: Wikimedia Commons)'
         },
         {
           type: 'image',
-          src: '/images/linguistics_club.jpg',
-          alt: 'UGA Linguistics Club meeting',
-          caption: 'A typical UGA Linguistics Club meeting in progress.'
+          src: 'https://via.placeholder.com/600x400/C0C0C0/000000?text=Historical+Arabic-script+Bengali+Text',
+          alt: 'An example of Arabic-script Bengali from a historical manuscript.',
+          caption: 'A historical Bengali text written in the Arabic script (Credit: Bangla Academy)'
+        }
+      ]
+    },
+    {
+      id: 'sociolinguistics',
+      title: 'Sociolinguistics of Urban Bengali',
+      summary: 'My interests include the sociolinguistics of urban Bengali, with a focus on the dynamic interaction between different varieties within urban spaces.',
+      content: `
+        <p class="mb-4">My research interests also include the sociolinguistics of urban Bengali, particularly the dynamic interaction between **Standard Colloquial Bengali (chalitabhasha)**, regional dialects, and mixed urban varieties. I am especially interested in the urban "koine" variety that has emerged in Dhaka, but my work could extend to other major cities like Chittagong. I draw inspiration from scholars like Singh (1986), who accurately predicted a shift in the Bengali diglossic situation, where the literary **sadhubhasha** variety would decline, and a new, distinct Bangladeshi colloquial variety would emerge from a mix of chalitabhasha and local dialects.</p>
+        <p class="mb-4">In my work, I aim to build upon earlier documentation, such as Rafiqul Islam's "Introduction to an East Pakistani Dialect," by conducting in-depth analyses of the modern urban variety. I would focus not on geographic variation across Bengal, but on the high and low varieties within a single urban space and even within the speech of individual speakers. I have already explored this through a project in a graduate sociolinguistics course, where I performed a **variationist analysis** on a self-proclaimed "standard speaker." I found that they used the Eastern Bengali dialectal pronunciation of /s/ instead of the standard /tɕʰ/ specifically in verbal endings of high-frequency verbs, revealing a subtle but systematic pattern of dialectal features within an otherwise standard-speaking individual.</p>
+        <p class="mb-0">This research aims to further explore the unique patterns of this intralingual contact variety. By investigating the subtle ways in which speakers navigate and blend different registers, from the prestige Standard Colloquial Bengali to local and regional dialects, my work would shed light on the sociolinguistic forces at play in a modern, rapidly changing urban environment. This approach provides a nuanced understanding of how language change and identity are negotiated at the level of the individual speaker, offering a fresh perspective on the evolution of urban vernaculars.</p>
+      `,
+      media: [
+        {
+          type: 'image',
+          src: 'https://upload.wikimedia.org/wikipedia/commons/e/e0/Dhaka_Skyline.jpg',
+          alt: 'The skyline of Dhaka, Bangladesh.',
+          caption: 'The modern skyline of Dhaka, a key urban center for Bengali sociolinguistics (Credit: Wikimedia Commons)'
+        }
+      ]
+    },
+    {
+      id: 'contact-linguistics',
+      title: 'Interlingual Language Contact in Bengal',
+      summary: 'Exploring the rich landscape of language contact in Bengal, with a focus on varieties influenced by Hindi-Urdu and the documentation of understudied linguistic communities.',
+      content: `
+        <p class="mb-4">My research interests also include the fascinating and complex landscape of language contact in Bengal, particularly focusing on varieties spoken in Dhaka that have been influenced by Hindi-Urdu. This includes **Dhakaiya Urdu**, **Puran Dhakaiya** (or Old Dhakaiya Bengali), and the Hindi and Urdu varieties spoken by specific marginalized communities, such as the stranded Pakistanis (Biharis) and Hindu sweepers. I also want to investigate the contact phenomena that have occurred between Bengali and (now-)Indo-Aryan-speaking tribal communities in Bangladesh, like the Chakma, Bishnupriya Manipuri, and Hajong. I am also interested in documenting the Rohingya, which I have vaguely heard exhibits some Chakma-like features, though otherwise close to Chittagonian Bengali. The goal is to document these understudied linguistic varieties before they potentially undergo further leveling or extinction.</p>
+        <p class="mb-4">I am interested in drawing parallels between these Dhaka-based varieties and other contact languages in the region. I would look at **Kolkata Hindi**, which, despite potential leveling, may provide insights into similar contact phenomena. I would also examine **Surjapuri** and the dialect of the **Shershabadia** community in northeastern Bihar and northern West Bengal, which may have undergone significant mixing with Urdu post-partition. Furthermore, I would be interested in the Bengali-influenced Urdu spoken in Karachi, as this would provide another data point for comparative analysis.</p>
+        <p class="mb-0">A key aspect of this research is a typological comparison between Urdu-influenced Bengali and Bengali-influenced Urdu. I would investigate if contact with Bengali has led to significant typological shifts in the phonology, morphology, and syntax of the Urdu or Hindi spoken in Dhaka and Kolkata. Beyond the purely linguistic aspects, this work is deeply rooted in the social dimensions of language. I believe it is crucial to explore the experiences of these marginalized communities. By documenting their language, I aim to honor their stories and shed light on a vital part of Bengal's linguistic and cultural history.</p>
+      `,
+      media: [
+        {
+          type: 'image',
+          src: 'https://upload.wikimedia.org/wikipedia/commons/b/bd/Tara_Masjid_Old_Dhaka_Bangladesh_-_panoramio.jpg',
+          alt: 'Tara Masjid in Old Dhaka, an architectural landmark of the city.',
+          caption: 'Tara Masjid in Old Dhaka, a historical area with rich linguistic contact (Credit: Wikimedia Commons)'
+        }
+      ]
+    },
+    {
+      id: 'dialects',
+      title: 'Documenting and Compiling Bengali Dialects',
+      summary: 'A broad interest in the documentation and compilation of understudied Bengali dialects, continuing the work of foundational linguistic figures with modern methods.',
+      content: `
+        <p class="mb-4">My general research interests include the documentation of Bengali dialects, with a particular focus on the understudied Eastern (**Vanga**) and Northern (**Varendra & Kamarupa**) varieties. This work is important not only for language preservation but also for comparative Eastern Bengali dialectology, as documented language varieties are a valuable resource for tracking words and sound changes over time. In my first year of undergraduate studies, I took the graduate-level course "Introduction to South Asian Linguistics," where my foundational contribution to this interest was the compilation of a mini-grammar of Eastern Bengali dialects as a literature review, which also included a preliminary investigation for my ergativity research.</p>
+        <p class="mb-4">I see this endeavor as a 21st-century revival of the documentation efforts of foundational figures like George Grierson, Muhammad Shahidullah, and Muhammad Abdul Hai. My methodology will involve extensive fieldwork to create a modern and comprehensive record of these nonstandard dialects. This approach is not limited to Bengali, as I am interested in applying this same methodology to other large nonstandard dialect clusters of interest across South Asia, such as **Deccani Urdu**.</p>
+        <p class="mb-0">This type of large-scale documentation and preservation effort is foundational to all my other research, providing the necessary data to investigate specific phenomena like tonogenesis and language contact in a comprehensive way.</p>
+      `,
+      media: [
+        {
+          type: 'image',
+          src: 'https://upload.wikimedia.org/wikipedia/commons/9/99/Gopalhaldareastbengalidialects.png',
+          alt: 'A map of Bengali dialect boundaries in the Bengal region.',
+          caption: 'A map showing the boundaries of Eastern Bengali dialects (Credit: Wikimedia Commons)'
         }
       ]
     }
   ];
 
   const [selectedInterest, setSelectedInterest] = React.useState(interestsData[0]);
-
   return (
     <section id="interests" className="py-8 md:py-12 w-full bg-white">
       <div className="container mx-auto px-4 max-w-4xl">
@@ -323,7 +383,6 @@ const Interests = () => {
         <p className="text-center text-gray-600 mb-8">
           Dive deeper into my academic and research interests.
         </p>
-
         <div className="flex flex-col md:flex-row gap-8">
           <div className="md:w-1/3 p-4 bg-gray-50 rounded-lg shadow-md">
             <h3 className="text-xl font-semibold text-gray-800 mb-4">Explore Topics</h3>
@@ -339,22 +398,21 @@ const Interests = () => {
                     }`}
                   >
                     <span className="font-medium">{interest.title}</span>
-                    <p className="text-sm mt-1 opacity-90">{interest.summary.substring(0, 70)}...</p>
+                    <p className="text-sm mt-1 opacity-90">{interest.summary}</p>
                   </button>
                 </li>
               ))}
             </ul>
           </div>
-
           <div className="md:w-2/3 p-6 bg-white rounded-lg shadow-md border border-gray-200">
             {selectedInterest ? (
               <>
                 <h3 className="text-2xl font-bold text-blue-700 mb-4">{selectedInterest.title}</h3>
+                {/* Dynamically renders HTML content from the data. */}
                 <div
                   className="prose lg:prose-lg text-gray-700 leading-relaxed text-base"
                   dangerouslySetInnerHTML={{ __html: selectedInterest.content }}
                 />
-
                 {selectedInterest.media && selectedInterest.media.length > 0 && (
                   <div className="mt-8 space-y-6">
                     {selectedInterest.media.map((mediaItem, index) => (
