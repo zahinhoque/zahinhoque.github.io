@@ -258,7 +258,7 @@ const Interests = () => {
         {
           type: 'image',
           src: 'https://upload.wikimedia.org/wikipedia/commons/d/da/Bengali-Assamese_subbranches.png',
-          alt: 'A diagram showing the subbranches of the Bengali-Assamese language family.',
+          alt: 'A diagram showing the subbranches of the Bengali-Assamese language family (Credit: Wikimedia Commons)',
           caption: 'A visual representation of the subbranches within the Bengali-Assamese language family.'
         }
       ]
@@ -283,6 +283,24 @@ const Interests = () => {
       ]
     },
     {
+      id: 'sociolinguistics',
+      title: 'Sociolinguistics of Urban Bengali',
+      summary: 'My interests include the sociolinguistics of urban Bengali, with a focus on the dynamic interaction between different varieties within urban spaces.',
+      content: `
+        <p class="mb-4">My research interests also include the sociolinguistics of urban Bengali, particularly the dynamic interaction between Standard Colloquial Bengali (chalitabhasha), regional dialects, and mixed urban varieties. I am especially interested in the urban "koine" variety that has emerged in Dhaka, but my work could extend to other major cities like Chittagong. I draw inspiration from scholars like Singh (1986), who accurately predicted a shift in the Bengali diglossic situation, where the literary sadhubhasha variety would decline, and a new, distinct Bangladeshi colloquial variety would emerge from a mix of chalitabhasha and local dialects.</p>
+        <p class="mb-4">In my work, I aim to build upon earlier documentation, such as Rafiqul Islam's "Introduction to an East Pakistani Dialect," by conducting in-depth analyses of the modern urban variety. I would focus not on geographic variation across Bengal, but on the high and low varieties within a single urban space and even within the speech of individual speakers. I have already explored this through a project in a graduate sociolinguistics course, where I performed a variationist analysis on a self-proclaimed "standard speaker." I found that they used the Eastern Bengali dialectal pronunciation of /s/ instead of the standard /tɕʰ/ specifically in verbal endings of high-frequency verbs, revealing a subtle but systematic pattern of dialectal features within an otherwise standard-speaking individual.</p>
+        <p class="mb-0">This research aims to further explore the unique patterns of this intralingual contact variety. By investigating the subtle ways in which speakers navigate and blend different registers, from the prestige Standard Colloquial Bengali to local and regional dialects, my work would shed light on the sociolinguistic forces at play in a modern, rapidly changing urban environment. This approach provides a nuanced understanding of how language change and identity are negotiated at the level of the individual speaker, offering a fresh perspective on the evolution of urban vernaculars.</p>
+      `,
+      media: [
+        {
+          type: 'image',
+          src: 'https://upload.wikimedia.org/wikipedia/commons/3/31/Dhaka_Skyline.jpg',
+          alt: 'The skyline of Dhaka, Bangladesh.',
+          caption: 'The modern skyline of Dhaka, a key urban center for Bengali sociolinguistics (Credit: Wikimedia Commons)'
+        }
+      ]
+    },
+    {
       id: 'tonogenesis',
       title: 'Tonogenesis and Aspiration in Eastern Bengali',
       summary: 'My research interests include the phonological process of tonogenesis in Eastern Bengali varieties and its relationship with the historical loss of aspiration.',
@@ -294,7 +312,7 @@ const Interests = () => {
       media: [
         {
           type: 'image',
-          src: 'https://upload.wikimedia.org/wikipedia/commons/e/e5/Praat_spectogram_standard_settings.jpg',
+          src: 'https://upload.wikimedia.org/wikipedia/commons/8/80/Praat_spectogram_standard_settings.jpg',
           alt: 'A spectrogram of speech, visualizing sound frequencies over time.',
           caption: 'Example of a spectrogram used in acoustic analysis (Credit: Wikimedia Commons)'
         }
@@ -325,24 +343,6 @@ const Interests = () => {
       ]
     },
     {
-      id: 'sociolinguistics',
-      title: 'Sociolinguistics of Urban Bengali',
-      summary: 'My interests include the sociolinguistics of urban Bengali, with a focus on the dynamic interaction between different varieties within urban spaces.',
-      content: `
-        <p class="mb-4">My research interests also include the sociolinguistics of urban Bengali, particularly the dynamic interaction between Standard Colloquial Bengali (chalitabhasha), regional dialects, and mixed urban varieties. I am especially interested in the urban "koine" variety that has emerged in Dhaka, but my work could extend to other major cities like Chittagong. I draw inspiration from scholars like Singh (1986), who accurately predicted a shift in the Bengali diglossic situation, where the literary sadhubhasha variety would decline, and a new, distinct Bangladeshi colloquial variety would emerge from a mix of chalitabhasha and local dialects.</p>
-        <p class="mb-4">In my work, I aim to build upon earlier documentation, such as Rafiqul Islam's "Introduction to an East Pakistani Dialect," by conducting in-depth analyses of the modern urban variety. I would focus not on geographic variation across Bengal, but on the high and low varieties within a single urban space and even within the speech of individual speakers. I have already explored this through a project in a graduate sociolinguistics course, where I performed a variationist analysis on a self-proclaimed "standard speaker." I found that they used the Eastern Bengali dialectal pronunciation of /s/ instead of the standard /tɕʰ/ specifically in verbal endings of high-frequency verbs, revealing a subtle but systematic pattern of dialectal features within an otherwise standard-speaking individual.</p>
-        <p class="mb-0">This research aims to further explore the unique patterns of this intralingual contact variety. By investigating the subtle ways in which speakers navigate and blend different registers, from the prestige Standard Colloquial Bengali to local and regional dialects, my work would shed light on the sociolinguistic forces at play in a modern, rapidly changing urban environment. This approach provides a nuanced understanding of how language change and identity are negotiated at the level of the individual speaker, offering a fresh perspective on the evolution of urban vernaculars.</p>
-      `,
-      media: [
-        {
-          type: 'image',
-          src: 'https://upload.wikimedia.org/wikipedia/commons/e/e0/Dhaka_Skyline.jpg',
-          alt: 'The skyline of Dhaka, Bangladesh.',
-          caption: 'The modern skyline of Dhaka, a key urban center for Bengali sociolinguistics (Credit: Wikimedia Commons)'
-        }
-      ]
-    },
-    {
       id: 'contact-linguistics',
       title: 'Interlingual Language Contact in Bengal',
       summary: 'Exploring the rich landscape of language contact in Bengal, with a focus on varieties influenced by Hindi-Urdu and the documentation of understudied linguistic communities.',
@@ -354,9 +354,9 @@ const Interests = () => {
       media: [
         {
           type: 'image',
-          src: 'https://upload.wikimedia.org/wikipedia/commons/b/bd/Tara_Masjid_Old_Dhaka_Bangladesh_-_panoramio.jpg',
+          src: 'https://upload.wikimedia.org/wikipedia/commons/1/1f/Tara_Masjid_Old_Dhaka_Bangladesh_-_panoramio.jpg',
           alt: 'Tara Masjid in Old Dhaka, an architectural landmark of the city.',
-          caption: 'Tara Masjid in Old Dhaka, a historical area with rich linguistic contact (Credit: Wikimedia Commons)'
+          caption: 'Tara Masjid in Old Dhaka, a historic area with rich linguistic contact (Credit: Wikimedia Commons)'
         }
       ]
     },
@@ -365,8 +365,8 @@ const Interests = () => {
       title: 'Documenting and Compiling Bengali Dialects',
       summary: 'A broad interest in the documentation and compilation of understudied Bengali dialects, continuing the work of foundational linguistic figures with modern methods.',
       content: `
-        <p class="mb-4">My general research interests include the documentation of Bengali dialects, with a particular focus on the understudied Eastern (Vanga) and Northern (Varendra & Kamarupa) varieties. This work is important not only for language preservation but also for comparative Eastern Bengali dialectology, as documented language varieties are a valuable resource for tracking words and sound changes over time. In my first year of undergraduate studies, I took the graduate-level course "Introduction to South Asian Linguistics," where my foundational contribution to this interest was the compilation of a mini-grammar of Eastern Bengali dialects as a literature review, which also included a preliminary investigation for my ergativity research.</p>
-        <p class="mb-4">I see this endeavor as a 21st-century revival of the documentation efforts of foundational figures like George Grierson, Muhammad Shahidullah, and Muhammad Abdul Hai. My methodology will involve extensive fieldwork to create a modern and comprehensive record of these nonstandard dialects. This approach is not limited to Bengali, as I am interested in applying this same methodology to other large nonstandard dialect clusters of interest across South Asia, such as Deccani Urdu.</p>
+        <p class="mb-4">My general research interests include the documentation of Bengali dialects, with a particular focus on the understudied Eastern (Vanga) and Northern (Varendra & Kamarupa) varieties spoken in Bangladesh. This work is important not only for language preservation but also for comparative Eastern Bengali dialectology, as documented language varieties are a valuable resource for tracking words and sound changes across a greater area. In my first year of undergraduate studies, I took the graduate-level course "Introduction to South Asian Linguistics," where my foundational contribution to this interest was the compilation of a mini-grammar of Eastern Bengali dialects as a literature review, which also included a preliminary investigation for my ergativity research.</p>
+        <p class="mb-4">I see this endeavor as a 21st-century revival of the documentation efforts of foundational figures like Grierson, Shahidullah, and Abdul Hai. My methodology will involve extensive fieldwork to create a modern and comprehensive record of these nonstandard dialects as well as the digitization of older resources, valuable yet inaccessible, like the Bangla Academy Lexicon of East Pakistani [Bangladeshi] Dialects by Shahidullah. This approach is not limited to Bengali, as I am interested in applying this same methodology to other large nonstandard dialect clusters of interest across South Asia, such as Deccani Urdu.</p>
         <p class="mb-0">This type of large-scale documentation and preservation effort is foundational to all my other research, providing the necessary data to investigate specific phenomena like tonogenesis and language contact in a comprehensive way.</p>
       `,
       media: [
@@ -374,7 +374,7 @@ const Interests = () => {
           type: 'image',
           src: 'https://upload.wikimedia.org/wikipedia/commons/9/99/Gopalhaldareastbengalidialects.png',
           alt: 'A map of Bengali dialect boundaries in the Bengal region.',
-          caption: 'A map showing the boundaries of Eastern Bengali dialects (Credit: Wikimedia Commons)'
+          caption: 'A map showing the boundaries of Eastern Bengali dialects'
         }
       ]
     }
@@ -402,8 +402,8 @@ const Interests = () => {
                         : 'bg-white text-gray-700 hover:bg-blue-100 hover:text-blue-800'
                     }`}
                   >
-                    <span className="font-medium">{interest.title}</span>
-                    <p className="text-sm mt-1 opacity-90">{interest.summary}</p>
+                    {/* <span className="font-medium">{interest.title}</span> */}
+                    {/* <p className="text-sm mt-1 opacity-90">{interest.summary}</p> */}
                   </button>
                 </li>
               ))}
