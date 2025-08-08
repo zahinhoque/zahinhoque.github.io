@@ -402,7 +402,7 @@ const Interests = () => {
                         : 'bg-white text-gray-700 hover:bg-blue-100 hover:text-blue-800'
                     }`}
                   >
-                    {/* <span className="font-medium">{interest.title}</span> */}
+                    <span className="font-medium">{interest.title}</span>
                     {/* <p className="text-sm mt-1 opacity-90">{interest.summary}</p> */}
                   </button>
                 </li>
