@@ -36,6 +36,8 @@ function App() {
 }
 
 const Header = ({ onNavigate, currentPage }) => {
+  const [isMenuOpen, setIsMenuOpen] = React.useState(false);
+
   const handleInternalScroll = (pageId, sectionId) => {
     onNavigate(pageId);
     setTimeout(() => {
@@ -51,6 +53,20 @@ const Header = ({ onNavigate, currentPage }) => {
     if (footer) {
       footer.scrollIntoView({ behavior: 'smooth' });
     }
+    setIsMenuOpen(false);
+  };
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
+  const handleMobileNavClick = (pageId, sectionId = null) => {
+    if (sectionId) {
+      handleInternalScroll(pageId, sectionId);
+    } else {
+      onNavigate(pageId);
+    }
+    setIsMenuOpen(false);
   };
 
   return (
@@ -66,10 +82,22 @@ const Header = ({ onNavigate, currentPage }) => {
           <a href="#footer" onClick={handleConnectClick} className="text-gray-600 hover:text-blue-700 font-medium transition duration-300">Connect</a>
           <a href="/ZahinHoquePublicCV.pdf" target="_blank" className="text-gray-600 hover:text-blue-700 font-medium transition duration-300">CV</a>
         </div>
+        {/* Mobile menu button */}
         <div className="md:hidden">
-          <i className="fas fa-bars text-xl text-gray-600"></i>
+          <button onClick={toggleMenu} className="text-gray-600 focus:outline-none">
+            <i className={`fas ${isMenuOpen ? 'fa-times' : 'fa-bars'} text-xl`}></i>
+          </button>
         </div>
       </nav>
+      <div className={`md:hidden transition-all duration-300 ease-in-out ${isMenuOpen ? 'max-h-screen opacity-100' : 'max-h-0 opacity-0 overflow-hidden'}`}>
+        <div className="bg-gray-50 flex flex-col items-center py-4 space-y-4">
+          <a href="#introduction" onClick={() => handleMobileNavClick('home', 'introduction')} className="block w-full text-center text-gray-600 hover:text-blue-700 font-medium transition duration-300 py-2">About</a>
+          <a href="#all-updates" onClick={() => handleMobileNavClick('allUpdates')} className="block w-full text-center text-gray-600 hover:text-blue-700 font-medium transition duration-300 py-2">News</a>
+          <a href="#interests" onClick={() => handleMobileNavClick('interests')} className="block w-full text-center text-gray-600 hover:text-blue-700 font-medium transition duration-300 py-2">Interests</a>
+          <a href="#footer" onClick={handleConnectClick} className="block w-full text-center text-gray-600 hover:text-blue-700 font-medium transition duration-300 py-2">Connect</a>
+          <a href="/ZahinHoquePublicCV.pdf" target="_blank" className="block w-full text-center text-gray-600 hover:text-blue-700 font-medium transition duration-300 py-2">CV</a>
+        </div>
+      </div>
     </header>
   );
 };
