@@ -63,7 +63,7 @@ const Header = ({ onNavigate, currentPage }) => {
           <a href="#introduction" onClick={() => handleInternalScroll('home', 'introduction')} className="text-gray-600 hover:text-blue-700 font-medium transition duration-300">About</a>
           <a href="#all-updates" onClick={() => onNavigate('allUpdates')} className="text-gray-600 hover:text-blue-700 font-medium transition duration-300">News</a>
           <a href="#interests" onClick={() => onNavigate('interests')} className="text-gray-600 hover:text-blue-700 font-medium transition duration-300">Interests</a>
-          <a href="#footer" onClick={() => handleInternalScroll('home', 'footer')} className="text-gray-600 hover:text-blue-700 font-medium transition duration-300">Connect</a>
+          <a href="#footer" onClick={handleConnectClick} className="text-gray-600 hover:text-blue-700 font-medium transition duration-300">Connect</a>
           <a href="/ZahinHoquePublicCV.pdf" target="_blank" className="text-gray-600 hover:text-blue-700 font-medium transition duration-300">CV</a>
         </div>
         <div className="md:hidden">
@@ -238,14 +238,6 @@ const AllUpdatesPage = ({ onNavigate }) => {
             </li>
           ))}
         </ul>
-        <div className="text-center mt-12">
-          <button
-            onClick={() => onNavigate('home')}
-            className="inline-block text-blue-700 font-semibold py-3 px-6 rounded-lg border border-blue-700 hover:bg-blue-100 transition duration-300 ease-in-out transform hover:-translate-y-1"
-          >
-            &larr; Back to Home
-          </button>
-        </div>
       </div>
     </section>
   );
